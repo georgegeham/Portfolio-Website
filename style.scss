@@ -72,7 +72,6 @@ $letterSpacing : $spacer*0.14;
 body {
     font-size: 16px;
     font-family: "poppins", sans-serif;
-    letter-spacing: $letterSpacing;
     line-height: 1.5;
 
     a {
@@ -141,6 +140,10 @@ body {
 
     /////////End Side Bar////////
     ////////Start Content////////
+    .hidden {
+        display: none;
+    }
+
     .home {
         padding-top: $spacer*3;
 
@@ -223,4 +226,107 @@ body {
             }
         }
     }
+
+    /////End of Home Page////
+    /// Start of About Page///
+    .about {
+        .title {
+            position: relative;
+
+            .underline {
+                display: inline-block;
+                position: absolute;
+                width: 70px;
+                height: 3px;
+                background-color: $primary;
+                bottom: -10px;
+                left: 13px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 3px;
+                background-color: $primary;
+                bottom: -17px;
+                left: 13px;
+            }
+        }
+
+        .name {
+            letter-spacing: normal;
+
+            .colored {
+                color: $primary;
+            }
+        }
+
+        .info {
+            letter-spacing: $letterSpacing;
+            font-size: 15px;
+
+            a {
+                color: $primary;
+            }
+        }
+
+        .details {
+            .info {
+                letter-spacing: normal;
+                font-size: 14px;
+                font-weight: bold;
+                border-bottom: 1px solid $gray-400;
+                margin-bottom: $spacer;
+
+                p {
+                    font-weight: normal;
+                    display: inline-block;
+                }
+
+            }
+
+            button {
+                background-color: $primary;
+                color: $light;
+            }
+        }
+
+        .language {
+            margin-bottom: $spacer*1.5;
+            font-weight: bold;
+            position: relative;
+
+            .precnt {
+                font-weight: normal;
+                position: absolute;
+                right: 0;
+            }
+
+            .meter {
+                display: inline-block;
+                width: 100%;
+                height: 4px;
+                background-color: $gray-400;
+                position: relative;
+
+                // &::after {
+                //     position: absolute;
+                //     content: "";
+                //     height: 4px;
+                //     width: 30%;
+                //     background-color: $primary;
+                // }
+                .color {
+                    display: inline-block;
+                    height: 4px;
+                    background-color: $primary;
+                    position: absolute;
+                    animation: fill 3s ease 0.5s;
+                }
+            }
+        }
+    }
+
+    /// End of About Page///
 }

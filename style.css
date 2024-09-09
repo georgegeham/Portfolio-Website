@@ -14,7 +14,6 @@
 body {
   font-size: 16px;
   font-family: "poppins", sans-serif;
-  letter-spacing: 0.14rem;
   line-height: 1.5;
 }
 body a {
@@ -79,6 +78,9 @@ body .sideBar .title .logo {
   font-family: "Clicker Script";
   font-weight: bold;
   font-size: 40px;
+}
+body .hidden {
+  display: none;
 }
 body .home {
   padding-top: 3rem;
@@ -145,6 +147,79 @@ body .home .row .pic .imageHolder::before {
 body .home .row .pic .imageHolder img {
   width: 80%;
   display: inline-block;
+}
+body .about .title {
+  position: relative;
+}
+body .about .title .underline {
+  display: inline-block;
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background-color: #0d6efd;
+  bottom: -10px;
+  left: 13px;
+}
+body .about .title::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #0d6efd;
+  bottom: -17px;
+  left: 13px;
+}
+body .about .name {
+  letter-spacing: normal;
+}
+body .about .name .colored {
+  color: #0d6efd;
+}
+body .about .info {
+  letter-spacing: 0.14rem;
+  font-size: 15px;
+}
+body .about .info a {
+  color: #0d6efd;
+}
+body .about .details .info {
+  letter-spacing: normal;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 1rem;
+}
+body .about .details .info p {
+  font-weight: normal;
+  display: inline-block;
+}
+body .about .details button {
+  background-color: #0d6efd;
+  color: #f8f9fa;
+}
+body .about .language {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  position: relative;
+}
+body .about .language .precnt {
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+}
+body .about .language .meter {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #ced4da;
+  position: relative;
+}
+body .about .language .meter .color {
+  display: inline-block;
+  height: 4px;
+  background-color: #0d6efd;
+  position: absolute;
+  animation: fill 3s ease 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
