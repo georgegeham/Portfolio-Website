@@ -1,6 +1,9 @@
 const selectPage = document.querySelectorAll(".click");
 const pages = document.querySelectorAll("section.row");
 const sideBar = document.querySelector(".option");
+const aboutMe = document.querySelector(".aboutMe");
+const cv = document.querySelector(".cv");
+const hire = document.querySelector(".hire");
 const bar = document.querySelector(".sideBar");
 const dark = document.querySelector(".dark");
 // const color = document.querySelector(".color");
@@ -14,7 +17,17 @@ selectPage.forEach(btn => {
         closeBar();
     })
 })
-
+aboutMe.addEventListener("click" , ()=>{
+    getPage("about");
+    setActive(selectPage[1]);
+})
+cv.addEventListener("click",()=>{
+    window.open("https://drive.google.com/file/d/1znyTcV58rSkypiNPCdYOCW2iKmVNvEXS/view?usp=drive_link" , '_blank')
+})
+hire.addEventListener("click", ()=>{
+    getPage("contact");
+    setActive(selectPage[selectPage.length - 1]);
+})
 function setActive(e){
     selectPage.forEach(btn => {
         btn.classList.remove("active")
