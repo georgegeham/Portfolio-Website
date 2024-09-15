@@ -20,7 +20,7 @@ html {
 }
 
 .darkMode {
-  background-color: #212529;
+  background-color: #212529 !important;
   color: #f8f9fa !important;
 }
 .darkMode .bg-white {
