@@ -606,8 +606,8 @@ body .contact form .btn {
   body .row .home .info {
     text-align: center;
   }
-  .home .title{
-    font-size:2rem !important;
+  .home .title .name{
+    display: block;
   }
 }
 
